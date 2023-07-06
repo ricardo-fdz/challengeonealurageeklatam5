@@ -4,31 +4,38 @@
         <meta charset="UTF-8" />
         <link rel="icon" type="image/svg+xml" href="/vite.svg" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Vite App</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Raleway&display=swap" rel="stylesheet">
+        <title>Productos</title>
     </head>
     <body>
         <header class="header">
-            <img src="assets/images/logo.svg" alt="logo" />
+            <img src="assets/images/Logo.png" alt="logo" />
             <div class="search">
-                <input type="text" />
-                <button>🔎</button>
+                <input class="search__input" placeholder="Que desea buscar?" type="text" />
+                <button class="search__button"><i class="fa-solid fa-magnifying-glass"></i></button>
             </div>
-            <button class="outline-button button">Login</button>
+            <a class="button button--outline" href="registro.html">Login</a>
         </header>
-        <main>
-            <div class="promotions">
-                <h1 class="promotions__title">Febrero Promocional</h1>
-                <p class="promotions__descirption">
-                    Productos seleccionados con 33% de descuento
-                </p>
-                <button class="promotions__button button">Ver consolas</button>
-            </div>
+        <div class="promotions">
+            <h1 class="promotions__title">Febrero Promocional</h1>
+            <p class="promotions__descirption">
+                Productos seleccionados con 33% de descuento
+            </p>
+            <button class="promotions__button button">Ver consolas</button>
+        </div>
+        <main class="main">
             <div class="products">
                 <div class="categories">
                     <div class="categories__head">
                         <h2 class="categories__title">Star Wars</h2>
-                        <a href="" class="categories__link view-more"
-                            >Ver Todo</a
+                        <a href="" class="categories__link view-more">
+                            Ver Todo <i class="fa-solid fa-arrow-right"></i>
+                        </a
                         >
                     </div>
                     <div class="products__list">
@@ -40,7 +47,7 @@
                             />
                             <p class="product__description">Product ASD</p>
                             <span class="product__price">$75.00</span>
-                            <a href="" class="product_link">Ver producto</a>
+                            <a href="" class="product__link">Ver producto</a>
                         </div>
                         <div class="product">
                             <img
@@ -50,7 +57,7 @@
                             />
                             <p class="product__description">Product ASD</p>
                             <span class="product__price">$75.00</span>
-                            <a href="" class="product_link">Ver producto</a>
+                            <a href="" class="product__link">Ver producto</a>
                         </div>
                         <div class="product">
                             <img
@@ -60,7 +67,7 @@
                             />
                             <p class="product__description">Product ASD</p>
                             <span class="product__price">$75.00</span>
-                            <a href="" class="product_link">Ver producto</a>
+                            <a href="" class="product__link">Ver producto</a>
                         </div>
                         <div class="product">
                             <img
@@ -70,7 +77,7 @@
                             />
                             <p class="product__description">Product ASD</p>
                             <span class="product__price">$75.00</span>
-                            <a href="" class="product_link">Ver producto</a>
+                            <a href="" class="product__link">Ver producto</a>
                         </div>
                         <div class="product">
                             <img
@@ -80,7 +87,7 @@
                             />
                             <p class="product__description">Product ASD</p>
                             <span class="product__price">$75.00</span>
-                            <a href="" class="product_link">Ver producto</a>
+                            <a href="" class="product__link">Ver producto</a>
                         </div>
                         <div class="product">
                             <img
@@ -90,56 +97,64 @@
                             />
                             <p class="product__description">Product ASD</p>
                             <span class="product__price">$75.00</span>
-                            <a href="" class="product_link">Ver producto</a>
-                        </div>
-                    </div>
-                    <div class="info">
-                        <img src="assets/images/logo.svg" alt="" class="logo" />
-                        <div class="about-us">
-                            <ul class="about-us__links">
-                                <li class="about-us__link">Quienes Somos</li>
-                                <li class="about-us__link">
-                                    Politica de privacidad
-                                </li>
-                                <li class="about-us__link">
-                                    Porgrama de fidelidad
-                                </li>
-                                <li class="about-us__link">Nuestras Tiendas</li>
-                                <li class="about-us__link">
-                                    Quiero ser franquiciado
-                                </li>
-                                <li class="about-us__link">Anuncie aqui</li>
-                            </ul>
-                        </div>
-                        <div class="contact-us">
-                            <h5 class="contact-us__title">
-                                Hable con nosotros
-                            </h5>
-                            <label for="name" class="contact-us__label"></label>
-                            <input
-                                type="text"
-                                placeholder="Escribe tu nombre"
-                                name="name"
-                                class="contact-us__input"
-                            />
-                            <textarea
-                                name="message"
-                                placeholder="Escribe tu mensaje"
-                                cols="30"
-                                rows="2"
-                                class="contact-us__input"
-                            ></textarea>
-                            <button class="contact-us__button button">
-                                Enviar mensaje
-                            </button>
+                            <a href="" class="product__link">Ver producto</a>
                         </div>
                     </div>
                 </div>
             </div>
         </main>
-        <footer>
-            <h4>Desarrollado por ricardo-hfdz</h4>
-            <p>2021</p>
+        <div class="info">
+            <img src="assets/images/logo.png" alt="" class="logo" />
+            <div class="about-us">
+                <ul class="about-us__links">
+                    <li class="about-us__link">Quienes Somos</li>
+                    <li class="about-us__link">
+                        Politica de privacidad
+                    </li>
+                    <li class="about-us__link">
+                        Porgrama de fidelidad
+                    </li>
+                    <li class="about-us__link">Nuestras Tiendas</li>
+                    <li class="about-us__link">
+                        Quiero ser franquiciado
+                    </li>
+                    <li class="about-us__link">Anuncie aqui</li>
+                </ul>
+            </div>
+            <div class="contact-us">
+                <form action="" class="form">
+                    <h5 class="form__title">Hable con nosotros</h5>
+                    <div class="input-group">
+                        <label for="name" class="input-group__label"
+                            >Nombre</label
+                        >
+                        <input
+                            type="text"
+                            name="name"
+                            placeholder="Escirba su nombre"
+                            class="input-group__input"
+                        />
+                    </div>
+                    <div class="input-group">
+                        <label
+                            for="message"
+                            class="input-group__label"
+                            >Mensaje</label
+                        >
+                        <textarea
+                            name="message"
+                            type="text"
+                            placeholder="Escriba su mensaje"
+                            class="input-group__input"
+                        ></textarea>
+                    </div>
+                    <button class="button">Enviar mensaje</button>
+                </form>
+            </div>
+        </div>
+        <footer class="footer">
+            <h4 class="footer__credit">Desarrollado por ricardo-hfdz</h4>
+            <p class="footer__year">2023</p>
         </footer>
         <script type="module" src="/main.js"></script>
     </body>

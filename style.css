@@ -1,4 +1,301 @@
-:root {
+body {
+  font-family: Raleway;
+
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px;
+  gap: 0.5rem;
+}
+
+.search {
+  order: 1;
+  display: flex;
+  /* width: 17rem; */
+  padding: 0.5rem 1rem;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.search__input {
+  display: none;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 1.25rem;
+  background: var(--preto-05, #F5F5F5);
+}
+
+.search__button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.button {
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  display: flex;
+  width: 9.3125rem;
+  padding: 0.75rem 1rem;
+  justify-content: center;
+  align-items: center;
+  gap: 0.625rem;
+  border: 1px solid var(--azul-100, #2A7AE4);
+  background-color: var(--azul-100, #2A7AE4);
+  color: white;
+  cursor: pointer;
+}
+
+
+.button--outline {
+  background: none;
+  color: var(--azul-100, #2A7AE4);
+}
+
+.promotions {
+  background-image: url(https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_1.0/c_scale,w_900/ncom/en_US/games/switch/h/hollow-knight-silksong-switch/hero);
+  background-position: top;
+  background-size: cover;
+  color: white;
+  display: flex;
+  height: 12rem;
+  padding: 1rem;
+  flex-direction: column;
+  justify-content: flex-end;
+  text-shadow: -2px 2px 2px rgba(0, 0, 0, 0.6);
+  align-self: stretch;
+}
+
+main{
+  background: var(--preto-05, #F5F5F5);
+  padding: 20px;
+}
+
+.promotions__title {
+  margin: 0;
+}
+
+.products {
+  margin: 20px;
+}
+
+
+.categories__head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.categories__link {
+  text-decoration: none;
+  font-weight: bold;
+  gap: 10px;
+}
+.product:nth-last-child(-n+2) {
+  display: none;
+}
+.products__list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-bottom: 20px;
+  gap: 1rem;
+}
+
+.product {
+  max-width: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+
+.product__image {
+  width: 100%;
+}
+
+.product__description {
+  color: var(--preto-100, #464646);
+  font-size: 0.875rem;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin: 0;
+
+}
+
+
+.product__price {
+  color: var(--preto-100, #464646);
+  font-size: 1rem;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.product__link {
+  text-decoration: none;
+  font-weight: bold;
+  gap: 10px;
+}
+
+.info {
+  display: flex;
+  padding: 1rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  align-self: stretch;
+  background: var(--azul-10, #EAF2FD);
+}
+
+.about-us__links {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-self: stretch;
+}
+
+.about-us__link {
+  color: var(--preto-100, #464646);
+  font-size: 1rem;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  list-style: none;
+}
+
+.contact-us {
+  width: 100%;
+}
+
+.form {
+  gap: 1rem;
+}
+
+.form__title {
+  color: var(--preto-100, #464646);
+  margin: 0;
+  font-size: 1rem;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.input-group {
+  display: flex;
+  padding: 8px;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  gap: 0.4375rem;
+  align-self: stretch;
+  border-radius: 0.25rem;
+  background: var(--preto-branco, #FFF);
+  margin-bottom: 20px;
+
+}
+
+.input-group__label {
+  color: var(--preto-50, #A2A2A2);
+  font-size: 0.75rem;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1rem;
+}
+
+.input-group__input {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  align-self: stretch;
+  border: none;
+}
+
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--preto-100, #464646);
+  text-align: center;
+  font-size: 1rem;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.login{
+  margin: 0 auto;
+
+  margin-top: 50px;
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 500px;
+}
+
+
+@media screen and (min-width: 768px) {
+
+
+  .search {
+    order: 0;
+    width: 17rem;
+  }
+
+  
+  .search__input{
+    display: block;
+  }
+
+
+  .search__button {
+    position: relative;
+    right: 0;
+    margin-left: -45px;
+  }
+
+}
+
+@media screen and (min-width: 1024px) {
+
+  .product:nth-last-child(-n+2) {
+    max-width: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .info{
+    justify-content: space-between;
+    flex-direction: row;
+  }
+
+  .contact-us{
+    width: 40%;
+  }
+
+}
+
+
+/* :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
@@ -94,4 +391,4 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
-}
+} */

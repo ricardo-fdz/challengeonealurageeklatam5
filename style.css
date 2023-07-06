@@ -204,7 +204,7 @@ main{
   border-radius: 0.25rem;
   background: var(--preto-branco, #FFF);
   margin-bottom: 20px;
-
+  border-bottom: 2px #C8C8C8 solid;
 }
 
 .input-group__label {

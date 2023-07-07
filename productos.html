@@ -1,11 +1,351 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Productos</title>
-</head>
-<body>
-  
-</body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+            integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+            integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat&family=Raleway&display=swap"
+            rel="stylesheet"
+        />
+        <title>Productos</title>
+    </head>
+    <body>
+        <header class="header">
+            <img src="assets/images/Logo.png" alt="logo" >
+            <div class="search">
+                <input
+                    class="search__input"
+                    placeholder="Que desea buscar?"
+                    type="text"
+                />
+                <button class="search__button">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </div>
+            <a class="button button--outline" href="registro.html">Login</a>
+        </header>
+        <main class="main">
+            <div class="products">
+                <div class="categories">
+                    <div class="categories__head">
+                        <h2 class="categories__title">Star Wars</h2>
+                        <a href="nuevo-producto.html" class="button">
+                            Agregar producto
+                        </a>
+                    </div>
+                    <div class="products__list">
+                        <div class="product">
+                            <img
+                                src="assets/images/cover.jpg"
+                                alt=""
+                                class="product__image"
+                            />
+                            <div class="product__controls">
+                              <i class="fa-solid fa-trash"></i>
+                              <i class="fa-solid fa-pen-to-square"></i>
+                            </div>
+                            <p class="product__description">Product ASD</p>
+                            <span class="product__price">$75.00</span>
+                            <p class="product__id">#111111</p>
+                        </div>
+                        <div class="product">
+                            <img
+                                src="assets/images/funko.bmp"
+                                alt=""
+                                class="product__image"
+                            />
+                            <div class="product__controls">
+                              <i class="fa-solid fa-trash"></i>
+                              <i class="fa-solid fa-pen-to-square"></i>
+                            </div>
+                            <p class="product__description">Product ASD</p>
+                            <span class="product__price">$75.00</span>
+                            <p class="product__id">#111111</p>
+                        </div>
+                        <div class="product">
+                            <img
+                                src="assets/images/cover.jpg"
+                                alt=""
+                                class="product__image"
+                            />
+                            <div class="product__controls">
+                              <i class="fa-solid fa-trash"></i>
+                              <i class="fa-solid fa-pen-to-square"></i>
+                            </div>
+                            <p class="product__description">Product ASD</p>
+                            <span class="product__price">$75.00</span>
+                            <p class="product__id">#111111</p>
+                        </div>
+                        <div class="product">
+                            <img
+                                src="assets/images/cover.jpg"
+                                alt=""
+                                class="product__image"
+                            />
+                            <div class="product__controls">
+                              <i class="fa-solid fa-trash"></i>
+                              <i class="fa-solid fa-pen-to-square"></i>
+                            </div>
+                            <p class="product__description">Product ASD</p>
+                            <span class="product__price">$75.00</span>
+                            <p class="product__id">#111111</p>
+                        </div>
+                        <div class="product">
+                            <img
+                                src="assets/images/cover.jpg"
+                                alt=""
+                                class="product__image"
+                            />
+                            <div class="product__controls">
+                              <i class="fa-solid fa-trash"></i>
+                              <i class="fa-solid fa-pen-to-square"></i>
+                            </div>
+                            <p class="product__description">Product ASD</p>
+                            <span class="product__price">$75.00</span>
+                            <p class="product__id">#111111</p>
+                        </div>
+                        <div class="product">
+                            <img
+                                src="assets/images/cover.jpg"
+                                alt=""
+                                class="product__image"
+                            />
+                            <div class="product__controls">
+                              <i class="fa-solid fa-trash"></i>
+                              <i class="fa-solid fa-pen-to-square"></i>
+                            </div>
+                            <p class="product__description">Product ASD</p>
+                            <span class="product__price">$75.00</span>
+                            <p class="product__id">#111111</p>
+                        </div>
+                        <div class="product">
+                            <img
+                                src="assets/images/cover.jpg"
+                                alt=""
+                                class="product__image"
+                            />
+                            <div class="product__controls">
+                              <i class="fa-solid fa-trash"></i>
+                              <i class="fa-solid fa-pen-to-square"></i>
+                            </div>
+                            <p class="product__description">Product ASD</p>
+                            <span class="product__price">$75.00</span>
+                            <p class="product__id">#111111</p>
+                        </div>
+                        <div class="product">
+                            <img
+                                src="assets/images/cover.jpg"
+                                alt=""
+                                class="product__image"
+                            />
+                            <div class="product__controls">
+                              <i class="fa-solid fa-trash"></i>
+                              <i class="fa-solid fa-pen-to-square"></i>
+                            </div>
+                            <p class="product__description">Product ASD</p>
+                            <span class="product__price">$75.00</span>
+                            <p class="product__id">#111111</p>
+                        </div>
+                        <div class="product">
+                            <img
+                                src="assets/images/cover.jpg"
+                                alt=""
+                                class="product__image"
+                            />
+                            <div class="product__controls">
+                              <i class="fa-solid fa-trash"></i>
+                              <i class="fa-solid fa-pen-to-square"></i>
+                            </div>
+                            <p class="product__description">Product ASD</p>
+                            <span class="product__price">$75.00</span>
+                            <p class="product__id">#111111</p>
+                        </div>
+                        <div class="product">
+                            <img
+                                src="assets/images/cover.jpg"
+                                alt=""
+                                class="product__image"
+                            />
+                            <div class="product__controls">
+                              <i class="fa-solid fa-trash"></i>
+                              <i class="fa-solid fa-pen-to-square"></i>
+                            </div>
+                            <p class="product__description">Product ASD</p>
+                            <span class="product__price">$75.00</span>
+                            <p class="product__id">#111111</p>
+                        </div>
+                        <div class="product">
+                            <img
+                                src="assets/images/cover.jpg"
+                                alt=""
+                                class="product__image"
+                            />
+                            <p class="product__description">Product ASD</p>
+                            <span class="product__price">$75.00</span>
+                            <p class="product__id">#111111</p>
+                        </div>
+                        <div class="product">
+                            <img
+                                src="assets/images/cover.jpg"
+                                alt=""
+                                class="product__image"
+                            />
+                            <div class="product__controls">
+                              <i class="fa-solid fa-trash"></i>
+                              <i class="fa-solid fa-pen-to-square"></i>
+                            </div>
+                            <p class="product__description">Product ASD</p>
+                            <span class="product__price">$75.00</span>
+                            <p class="product__id">#111111</p>
+                        </div>
+                        <div class="product">
+                            <img
+                                src="assets/images/cover.jpg"
+                                alt=""
+                                class="product__image"
+                            />
+                            <p class="product__description">Product ASD</p>
+                            <span class="product__price">$75.00</span>
+                            <p class="product__id">#111111</p>
+                        </div>
+                        <div class="product">
+                            <img
+                                src="assets/images/cover.jpg"
+                                alt=""
+                                class="product__image"
+                            />
+                            <div class="product__controls">
+                              <i class="fa-solid fa-trash"></i>
+                              <i class="fa-solid fa-pen-to-square"></i>
+                            </div>
+                            <p class="product__description">Product ASD</p>
+                            <span class="product__price">$75.00</span>
+                            <p class="product__id">#111111</p>
+                        </div>
+                        <div class="product">
+                            <img
+                                src="assets/images/cover.jpg"
+                                alt=""
+                                class="product__image"
+                            />
+                            <div class="product__controls">
+                              <i class="fa-solid fa-trash"></i>
+                              <i class="fa-solid fa-pen-to-square"></i>
+                            </div>
+                            <p class="product__description">Product ASD</p>
+                            <span class="product__price">$75.00</span>
+                            <p class="product__id">#111111</p>
+                        </div>
+                        <div class="product">
+                            <img
+                                src="assets/images/cover.jpg"
+                                alt=""
+                                class="product__image"
+                            />
+                            <div class="product__controls">
+                              <i class="fa-solid fa-trash"></i>
+                              <i class="fa-solid fa-pen-to-square"></i>
+                            </div>
+                            <p class="product__description">Product ASD</p>
+                            <span class="product__price">$75.00</span>
+                            <p class="product__id">#111111</p>
+                        </div>
+                        <div class="product">
+                            <img
+                                src="assets/images/cover.jpg"
+                                alt=""
+                                class="product__image"
+                            />
+                            <div class="product__controls">
+                              <i class="fa-solid fa-trash"></i>
+                              <i class="fa-solid fa-pen-to-square"></i>
+                            </div>
+                            <p class="product__description">Product ASD</p>
+                            <span class="product__price">$75.00</span>
+                            <p class="product__id">#111111</p>
+                        </div>
+                        <div class="product">
+                            <img
+                                src="assets/images/cover.jpg"
+                                alt=""
+                                class="product__image"
+                            />
+                            <div class="product__controls">
+                              <i class="fa-solid fa-trash"></i>
+                              <i class="fa-solid fa-pen-to-square"></i>
+                            </div>
+                            <p class="product__description">Product ASD</p>
+                            <span class="product__price">$75.00</span>
+                            <p class="product__id">#111111</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <div class="info">
+            <img src="assets/images/logo.png" alt="" class="logo" />
+            <div class="about-us">
+                <ul class="about-us__links">
+                    <li class="about-us__link">Quienes Somos</li>
+                    <li class="about-us__link">Politica de privacidad</li>
+                    <li class="about-us__link">Porgrama de fidelidad</li>
+                    <li class="about-us__link">Nuestras Tiendas</li>
+                    <li class="about-us__link">Quiero ser franquiciado</li>
+                    <li class="about-us__link">Anuncie aqui</li>
+                </ul>
+            </div>
+            <div class="contact-us">
+                <form action="" class="form">
+                    <h5 class="form__title">Hable con nosotros</h5>
+                    <div class="input-group">
+                        <label for="name" class="input-group__label"
+                            >Nombre</label
+                        >
+                        <input
+                            type="text"
+                            name="name"
+                            placeholder="Escirba su nombre"
+                            class="input-group__input"
+                        />
+                    </div>
+                    <div class="input-group">
+                        <label for="message" class="input-group__label"
+                            >Mensaje</label
+                        >
+                        <textarea
+                            name="message"
+                            type="text"
+                            placeholder="Escriba su mensaje"
+                            class="input-group__input"
+                        ></textarea>
+                    </div>
+                    <button class="button">Enviar mensaje</button>
+                </form>
+            </div>
+        </div>
+        <footer class="footer">
+            <h4 class="footer__credit">Desarrollado por ricardo-hfdz</h4>
+            <p class="footer__year">2023</p>
+        </footer>
+        <script type="module" src="/main.js"></script>
+    </body>
 </html>
